@@ -4,6 +4,7 @@ jobs:
     working_directory: ~/pk-test
     docker:
       - image: ucreateit/laravel-pgsql:0.0.1
+      - image: ucreateit/php7.2:v0.2
         environment:
         DATABASE_URL: postgres://ubuntu@localhost:5432/postgres
       - image: postgres:9.6.2
