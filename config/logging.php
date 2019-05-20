@@ -87,6 +87,12 @@ return [
             'driver' => 'errorlog',
             'level' => 'debug',
         ],
+        'rollbar' => [
+            'driver' => 'monolog',
+            'handler' => \Rollbar\Laravel\MonologHandler::class,
+            'access_token' => env('ROLLBAR_ACCESS_TOKEN'),
+            'level' => 'debug',
+        ],
     ],
 
 ];
